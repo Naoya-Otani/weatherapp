@@ -53,7 +53,7 @@ export default function Home() {
             <div>
               <input
                 onChange={(e) => setCity(e.target.value)}
-                className='bg-transparent border-none text-white focus:outline-none text-2xl'
+                className='bg-transparent border-none text-white focus:outline-none text-2xl placeholder:font-fancy'
                 type='text'
                 placeholder='都市を検索'
               />

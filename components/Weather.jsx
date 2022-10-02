@@ -14,26 +14,26 @@ const Weather = ({ data }) => {
             width='100'
             height='100'
           />
-          <p className='text-2xl'>{data.weather[0].main}</p>
+          <p className='text-2xl font-fancy'>{data.weather[0].main}</p>
         </div>
-        <p className='text-9xl'>{data.main.temp.toFixed(0)}&#176;</p>
+        <p className='text-9xl font-fancy'>{data.main.temp.toFixed(0)}&#176;</p>
       </div>
       {/* Bottom */}
 
 <div className='bg-black/50 relative p-8 rounded-md'>
-    <p className='text-2xl text-center pb-6'>{data.name}の天気</p>
+    <p className='font-fancy text-2xl text-center pb-6'>{data.name}の天気</p>
     <div className='flex justify-between text-center'>
         <div>
-            <p className='font-bold text-2xl'>{data.main.feels_like.toFixed(0)}&#176;</p>
-            <p className='text-xl'>体感温度</p>
+            <p className='font-fancy font-bold text-2xl'>{data.main.feels_like.toFixed(0)}&#176;</p>
+            <p className='font-fancy text-xl'>体感温度</p>
         </div>
         <div>
-            <p className='font-bold text-2xl'>{data.main.humidity}%</p>
-            <p className='text-xl'>湿度</p>
+            <p className='font-fancy font-bold text-2xl'>{data.main.humidity}%</p>
+            <p className='font-fancy text-xl'>湿度</p>
         </div>
         <div>
-            <p className='font-bold text-2xl'>{data.wind.speed.toFixed(0)} MPH</p>
-            <p className='text-xl'>風速</p>
+            <p className='font-fancy font-bold text-2xl'>{data.wind.speed.toFixed(0)} MPH</p>
+            <p className='font-fancy text-xl'>風速</p>
         </div>
     </div>
 </div>
